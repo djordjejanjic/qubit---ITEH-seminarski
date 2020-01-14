@@ -14,7 +14,7 @@
             <div class="col-sm-12">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Dodaj pitanje u kategoriju "<?php echo $exam_category; ?>"</h1>
+                        <h1>Dodaj pitanje u kategoriju: "<?php echo $exam_category; ?>"</h1>
                     </div>
                 </div>
             </div>
