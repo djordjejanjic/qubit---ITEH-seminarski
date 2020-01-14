@@ -18,72 +18,153 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-
         <div class="content mt-3">
             <div class="animated fadeIn">
-
-
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card">
-                            
+                        <div class="card"> 
                             <div class="card-body">
                                <form name="form1" action="" method="post" enctype="multipart/form-data">
                             <div class="col-lg-6">
-                             
                             <div class="card">
                             <div class="card-header"><strong>Dodaj tekstualno pitanje</strong></div>
                             <div class="card-body card-block">
                                 <div class="form-group"><label for="company" class=" form-control-label">Pitanje</label><input type="text" class="form-control" name="question" placeholder="Dodaj novo pitanje"></div>
-                                   <div class="form-group"><label for="company" class=" form-control-label">Opcija 1</label><input type="text" class="form-control" name="opt1" placeholder="Dodaj opciju 1"></div>
+                                <div class="form-group"><label for="company" class=" form-control-label">Opcija 1</label><input type="text" class="form-control" name="opt1" placeholder="Dodaj opciju 1"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 2</label><input type="text" class="form-control" name="opt2" placeholder="Dodaj opciju 2"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 3</label><input type="text" class="form-control" name="opt3" placeholder="Dodaj opciju 3"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 4</label><input type="text" class="form-control" name="opt4" placeholder="Dodaj opciju 4"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="text" class="form-control" name="answer" placeholder="Dodaj odgovor"></div>
                                 
-                                <div class="form-group">
-                                    
-                                    <input type="submit" name="submit1" value="Dodaj pitanje" class="btn btn-success">
-                                    
-                                </div>
-                                       
+                                <div class="form-group">         
+                                    <input type="submit" name="submit1" value="Dodaj pitanje" class="btn btn-success">                                  
+                                </div>                      
                              </div>
-                        </div>
-                        
+                        </div>       
                     </div>
-                                
-                            <div class="col-lg-6">
-                             
-                            <div class="card">
+                     <div class="col-lg-6">   
+                        <div class="card">
                             <div class="card-header"><strong>Dodaj pitanje sa fotografijama</strong></div>
                             <div class="card-body card-block">
                                 <div class="form-group"><label for="company" class=" form-control-label">Pitanje</label><input type="text" class="form-control" name="fquestion" placeholder="Dodaj novo pitanje"></div>
                                    <div class="form-group"><label for="company" class=" form-control-label">Opcija 1</label><input type="file" class="form-control" name="fopt1" style="padding-bottom:35px;"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Opcija 2</label><input type="file" class="form-control" name="fopt2" style="padding-bottom:35px;"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Opcija 3</label><input type="file" class="form-control" name="fopt3" style="padding-bottom:35px;"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Opcija 4</label><input type="file" class="form-control" name="fopt4" style="padding-bottom:35px;"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="file" class="form-control" name="fanswer" style="padding-bottom:35px;"></div>
-                                
-                                <div class="form-group">
-                                    
-                                    <input type="submit" name="submit2" value="Dodaj pitanje" class="btn btn-success">
-                                    
-                                </div>
-                                       
-                             </div>
-                                
-                        </div>
-                               
-                    </div>
+                                    <div class="form-group"><label for="company" class=" form-control-label">Opcija 2</label><input type="file" class="form-control" name="fopt2" style="padding-bottom:35px;"></div>
+                                     <div class="form-group"><label for="company" class=" form-control-label">Opcija 3</label><input type="file" class="form-control" name="fopt3" style="padding-bottom:35px;"></div>
+                                        <div class="form-group"><label for="company" class=" form-control-label">Opcija 4</label><input type="file" class="form-control" name="fopt4" style="padding-bottom:35px;"></div>
+                                            <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="file" class="form-control" name="fanswer" style="padding-bottom:35px;"></div>
+                                             <div class="form-group">
+                                               <input type="submit" name="submit2" value="Dodaj pitanje" class="btn btn-success">
+                                             </div>
+                                         </div>
+                                      </div>
+                                   </div>
                                 </form>   
                             </div>
                         </div> <!-- .card -->
-
                     </div>
                     <!--/.col-->
-            
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card"> 
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Pitanja</th>
+                                        <th>Opcija 1</th>
+                                        <th>Opcija 2</th>
+                                        <th>Opcija 3</th>
+                                        <th>Opcija 4</th>
+                                        <th>Izmeni</th>
+                                        <th>Izbriši</th>
+                                    </tr>
+                                
+                                
+                                <?php
+                                    
+                                    $res = mysqli_query($link, "SELECT * FROM questions where category = '$exam_category' ORDER BY question_no ASC");
+                                    while($row=mysqli_fetch_array($res))
+                                    {
+                                        echo "<tr>";
+                                        echo "<td>"; echo $row["question_no"]; echo "</td>";
+                                        echo "<td>"; echo $row["question"]; echo "</td>";
+                                        echo "<td>"; 
+
+                                        if(strpos($row["option1"], 'opt_images/')!==false)
+                                        {
+                                            ?>
+                                            <img src="<?php echo $row["option1"]; ?>" height="50" width="50">
+                                            <?php 
+                                        }else{
+                                            echo $row["option1"];
+                                        }
+                                        
+                                        echo "</td>";
+                                        echo "<td>";
+                                        
+                                        if(strpos($row["option2"], 'opt_images/')!==false)
+                                        {
+                                            ?>
+                                            <img src="<?php echo $row["option2"]; ?>" height="50" width="50">
+                                            <?php 
+                                        }else{
+                                            echo $row["option2"];
+                                        }
+
+                                        echo "</td>";
+                                        echo "<td>";
+                                        
+                                        if(strpos($row["option3"], 'opt_images/')!==false)
+                                        {
+                                            ?>
+                                            <img src="<?php echo $row["option3"]; ?>" height="50" width="50">
+                                            <?php 
+                                        }else{
+                                            echo $row["option3"];
+                                        }
+                                        echo "</td>";
+                                        echo "<td>";
+                                        
+                                        if(strpos($row["option4"], 'opt_images/')!==false)
+                                        {
+                                            ?>
+                                            <img src="<?php echo $row["option4"]; ?>" height="50" width="50">
+                                            <?php 
+                                        }else{
+                                                echo $row["option4"];
+                                        }
+                                        echo "</td>";
+                                        
+                                        echo "<td>";
+                                        if(strpos($row["option4"], 'opt_images/')!==false)
+                                        {
+                                            ?>
+                                            <a href="edit_option_images.php?id=<?php echo $row["id"]; ?>">Izmeni</a>
+                                            <?php 
+                                        }else{
+                                            ?>
+                                            <a href="edit_option.php?id=<?php echo $row["id"]; ?>">Izmeni</a>
+                                            <?php
+                                        }
+                                        echo "</td>";
+
+                                        echo "<td>";
+                                        ?>
+                                        <a href="delete_option.php?id=<?php echo $row["id"]; ?>">Izbriši</a>
+                                        <?php
+                                        echo "</td>";
+
+                                        echo "<tr>";
+                                    }
+
+                               
+                                 ?>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -187,11 +268,9 @@ if(isset($_POST['submit2']))
     window.location.href = window.location.href;
 </script>
 
-<?php
-    
+<?php   
 }
 ?>
-
 
 <?php
   include "footer.php";      
