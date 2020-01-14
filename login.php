@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "konekcija.php";
 ?>
 
@@ -80,10 +81,13 @@ include "konekcija.php";
         </script>
         <?php
     } else {
+
+        $_SESSION["username"]=$_POST["username"];
+
         ?>
         <script type="text/javascript">
             
-            window.location="demo.php";
+            window.location="izaberi_oblast.php";
             
         </script>
         <?php

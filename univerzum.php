@@ -1,8 +1,8 @@
 <?php
+session_start();
 include "header.php";
 ?>
  
-
  <div class="row" style="margin: 0px; padding:0px; margin-bottom: 50px; margin-top: 20px;">        
      <div class="col-lg-6 col-lg-push-3" style="min-height: 500px;">
          
@@ -21,7 +21,7 @@ include "header.php";
     
    <script type=text/javascript>
    
-    //SLIKA DANASNJEG DANA   
+    //SLIKA DANA   
      
     $.ajax({
         url:"https://api.nasa.gov/planetary/apod?api_key=aE9tzacMdYz2sbkKkIEFCAsRAaIry9wsgjm6efsQ",
