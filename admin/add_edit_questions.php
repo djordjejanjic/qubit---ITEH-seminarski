@@ -141,7 +141,7 @@
                                         if(strpos($row["option4"], 'opt_images/')!==false)
                                         {
                                             ?>
-                                            <a href="edit_option_images.php?id=<?php echo $row["id"]; ?>">Izmeni</a>
+                                            <a href="edit_option_images.php?id=<?php echo $row["id"]; ?>&id1=<?php echo $id; ?>">Izmeni</a>
                                             <?php 
                                         }else{
                                             ?>
@@ -152,7 +152,7 @@
 
                                         echo "<td>";
                                         ?>
-                                        <a href="delete_option.php?id=<?php echo $row["id"]; ?>">Izbriši</a>
+                                        <a href="delete_option.php?id=<?php echo $row["id"]; ?>&id1=<?php echo $id; ?>">Izbriši</a>
                                         <?php
                                         echo "</td>";
 
