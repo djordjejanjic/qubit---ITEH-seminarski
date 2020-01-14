@@ -145,7 +145,7 @@
                                             <?php 
                                         }else{
                                             ?>
-                                            <a href="edit_option.php?id=<?php echo $row["id"]; ?>">Izmeni</a>
+                                            <a href="edit_option.php?id=<?php echo $row["id"]; ?>&id1=<?php echo $id; ?>">Izmeni</a>
                                             <?php
                                         }
                                         echo "</td>";
