@@ -71,7 +71,6 @@ else{
             </td>
         </tr>
 
-        <tr>
             <td>
                 <input type="radio" name="rl" id="rl" value="<?php echo $opt2; ?>" onclick="radioclick(this.value, <?php echo $question_no; ?>);"
                 <?php
