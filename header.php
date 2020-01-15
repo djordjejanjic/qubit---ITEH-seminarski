@@ -38,7 +38,7 @@
                                                 </li>
                                                 <li class="nav-item"><a href="univerzum.php" class="nav-link">Univerzum | Fotka dana</a>
                                                 </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Istorija rezultata</a>
+                                                <li class="nav-item"><a href="istorija_rezultata.php" class="nav-link">Istorija rezultata</a>
                                                 </li>
                                                 <li class="nav-item"><a href="logout.php" class="nav-link">Izloguj se</a>
                                                 </li>

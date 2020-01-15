@@ -38,7 +38,7 @@
                                                 </li>
                                                 <li class="nav-item"><a href="univerzum.php" class="nav-link">Univerzum | Fotka dana</a>
                                                 </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Istorija rezultata</a>
+                                                <li class="nav-item"><a href="istorija_rezultata.php" class="nav-link">Istorija rezultata</a>
                                                 </li>
                                                 <li class="nav-item"><a href="logout.php" class="nav-link">Izloguj se</a>
                                                 </li>
@@ -74,26 +74,14 @@
             <!-- Mobile Menu start -->
 
             <!-- Mobile Menu end -->
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list">
-                                <div class="row">
-
-                                    <div class="col-lg-12 col-md-6 col-sm-6 col-xs-12 text-right">
-                                        <ul class="breadcome-menu">
-                                            <li><div id="countdowntimer" style="display: block;"></div>
+                                    <div class="timer">
+                                        <ul class="">
+                                            <li><div id="countdowntimer" style="display: block; color:white;"></div>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
+                            </div>           
     </div>
         
 <script type="text/javascript">

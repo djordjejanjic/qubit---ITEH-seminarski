@@ -35,6 +35,7 @@ thing > img{
     margin-top: 20px!important;
 }
 
+
 #fotka{
     
     margin-top: 10px;
@@ -44,3 +45,76 @@ thing > img{
     font-size: 25px;
     
 }
+
+#borderslike{
+    border:5px solid white;
+    border-radius: 10px;
+}
+
+.centriraj{
+    color:white;
+    font-size:50px;
+    font-family:'VT323', monospace;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+}
+
+.btn-oblast{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Coda', cursive;
+    background: rgb(2,0,36);
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(3,31,85,1) 41%, rgba(14,57,93,1) 100%);
+    border-color: #19476f!important;
+    display: block!important;
+    margin: auto!important;
+    margin-top: 20px!important; 
+    transition: 0.3s;
+}
+
+.btn-oblast:hover{
+    background: white!important;
+    color:#252148!important;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border:4px solid #19476f!important;
+}
+
+#countdowntimer{
+    display:block;
+    color:white;
+    font-size:40px;
+    font-family: 'Coda', cursive;
+    padding-top: 32px;
+    padding-left: 10px;
+}
+
+#rezultati{
+    color:white;
+    font-size:20px;
+    font-family:'Coda', cursive;
+    border: 5px solid #2a3169!important;
+}
+
+.timer{
+    display:block;
+    margin:auto;
+    margin-top: 30px;
+    border: 5px solid;
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(3,31,85,1) 82%, rgba(14,57,93,1) 100%);
+    border-color:  #19476f;
+    border-radius: 50%;
+    width: 200px;
+    height: 130px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .col-lg-12{
+        width: 80%!important;
+        display: block!important;
+        margin: auto!important;
+}
+  }
+

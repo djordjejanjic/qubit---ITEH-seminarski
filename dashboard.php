@@ -18,15 +18,15 @@ include "header_timer.php";
 
         <div class="row" style="margin-top:30px">
             <div class="row">
-                <div class="col-lg-10 col-lg-push-1" style="min-height:300px; background-color:white" id="load_questions">
+                <div class="col-lg-12 col-lg-push-0" style="min-height:250px; border:2px solid white; border-radius: 10px;" id="load_questions">
             </div>
         </div>
 
         <div class="row" style="margin-top:10px">
             <div class="col-lg-6 col-lg-push-3" style="min-height:50px">
                 <div class="col-lg-12 text-center">
-                    <input type="button" class="btn btn-warning" value="Prethodno" onclick="load_previous();">&nbsp;
-                    <input type="button" class="btn btn-success" value="Sledeće" onclick="load_next();">
+                    <input type="button" class="button-kviz" value="Prethodno" onclick="load_previous();">&nbsp;
+                    <input type="button" class="button-kviz" value="Sledeće" onclick="load_next();">
                 </div>
             </div>
         </div>    

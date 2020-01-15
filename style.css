@@ -1218,8 +1218,9 @@ ul.breadcome-menu li a:hover{
 /*  11. Professors
 /*----------------------------------------*/
 .hpanel .panel-body {
-    background: #fff;
-    border-radius: 2px;
+    background: none;
+    border: 2px solid white;
+    border-radius: 10px;
     padding: 20px;
     position: relative;
 }
@@ -2985,7 +2986,7 @@ td.text-right.mail-date {
     color: inherit;
     display: block;
     margin:auto;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     padding: 6px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -3335,14 +3336,14 @@ td.text-right.mail-date {
     line-height: 24px;
 }
 .content-error a {
-    display: inline-block;
-    margin: 0px 5px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    padding: 10px 30px;
-    border-radius: 3px;
-    background: #006DF0;
+    color: #252148;
+    background-color: #ffffff!important;
+    border-color: #19476f!important;
+    font-size: 20px;
+    display: block!important;
+    text-align: center;
+    width: 30%;
+    margin: auto!important;
     transition: all .4s ease 0s;
 }
 .login-footer a{
@@ -3612,9 +3613,12 @@ td.text-right.mail-date {
     padding-left: 0px;
 }
 .btn-success.loginbtn {
-    background-color: #006DF0;
-    border-color: #006DF0;
+   border:2px solid white;
+   border-radius:10px;
+   
 }
+
+
 .lock-inner i {
     font-size: 60px;
     color: #006DF0;
@@ -4730,3 +4734,18 @@ div#sparklinehome canvas {
 	color:#fff;
 	text-decoration:none;
 }
+
+.button-kviz{
+    background-color: #252148!important;
+    border-color: #19476f!important;
+    font-size:30px;
+    font-family:'VT323', monospace;
+    color:white;
+    transition: 0.3s;
+}
+
+.button-kviz:hover{
+    background-color:#fafafa!important;
+    color:#252148!important;
+}
+

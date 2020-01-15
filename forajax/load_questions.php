@@ -38,16 +38,17 @@ else{
     }
     ?>
     <br>
-    <table>
+    <table style="margin:auto;">
         <tr>
-            <td style="font-weight: bold; font-size: 18px; padding-left: 5px;" colspan="2">
+            <td style="font-weight: bold; color:white; font-size: 35px; padding-left: 15px; padding-bottom:30px; font-family:'Coda', monospace;" colspan="2">
                 <?php echo "( ".$question_no ." ) ". $question; ?>
             </td>
         </tr>
     </table>
-    <table style="margin-left:20px;">
+    <table style="margin:auto; font-size: 50px; font-family:'Squada One', monospace;" colspan="2">
+        
         <tr>
-            <td>
+            <td style="padding-bottom: 30px;">
                 <input type="radio" name="rl" id="rl" value="<?php echo $opt1; ?>" onclick="radioclick(this.value, <?php echo $question_no; ?>);"
                 <?php
                     if($ans==$opt1)
@@ -57,21 +58,21 @@ else{
                    
                 ?>>
             </td>
-            <td style="padding-left: 10px">
+            <td style="padding-left: 10px; padding-bottom: 20px; color:white;">
                 <?php
                 if(strpos($opt1, 'images/')!=false)
                 {
                     ?>
-                    <img src="admin/<?php echo $opt1; ?>" height="30" width="30">
+                    <img id="borderslike" src="admin/<?php echo $opt1; ?>" height="400" width="400">
                     <?php
                 }else{
                     echo $opt1;
                 }
                 ?>
             </td>
-        </tr>
+        
 
-            <td>
+            <td style="padding-left: 100px; padding-bottom: 30px;">
                 <input type="radio" name="rl" id="rl" value="<?php echo $opt2; ?>" onclick="radioclick(this.value, <?php echo $question_no; ?>);"
                 <?php
                     if($ans==$opt2)
@@ -81,12 +82,12 @@ else{
                    
                 ?>>
             </td>
-            <td style="padding-left: 10px">
+            <td style="padding-left: 10px; padding-bottom: 20px;color:white;">
                 <?php
                 if(strpos($opt2, 'images/')!=false)
                 {
                     ?>
-                    <img src="admin/<?php echo $opt2; ?>" height="30" width="30">
+                    <img id="borderslike" src="admin/<?php echo $opt2; ?>" height="400" width="400">
                     <?php
                 }else{
                     echo $opt2;
@@ -94,9 +95,9 @@ else{
                 ?>
             </td>
         </tr>
-
+        
         <tr>
-            <td>
+            <td style="padding-bottom: 30px;">
                 <input type="radio" name="rl" id="rl" value="<?php echo $opt3; ?>" onclick="radioclick(this.value, <?php echo $question_no; ?>);"
                 <?php
                     if($ans==$opt3)
@@ -106,22 +107,20 @@ else{
                    
                 ?>>
             </td>
-            <td style="padding-left: 10px">
+            <td style="padding-left: 10px; padding-bottom: 20px;color:white;">
                 <?php
                 if(strpos($opt3, 'images/')!=false)
                 {
                     ?>
-                    <img src="admin/<?php echo $opt3; ?>" height="30" width="30">
+                    <img id="borderslike" src="admin/<?php echo $opt3; ?>" height="400" width="400">
                     <?php
                 }else{
                     echo $opt3;
                 }
                 ?>
             </td>
-        </tr>
-
-        <tr>
-            <td>
+    
+            <td style="padding-left: 100px;padding-bottom: 30px;">
                 <input type="radio" name="rl" id="rl" value="<?php echo $opt4; ?>" onclick="radioclick(this.value, <?php echo $question_no; ?>);"
                 <?php
                     if($ans==$opt4)
@@ -131,12 +130,12 @@ else{
                    
                 ?>>
             </td>
-            <td style="padding-left: 10px">
+            <td style="padding-left: 10px; padding-bottom: 20px;color:white;">
                 <?php
                 if(strpos($opt4, 'images/')!=false)
                 {
                     ?>
-                    <img src="admin/<?php echo $opt4; ?>" height="30" width="30">
+                    <img id="borderslike" src="admin/<?php echo $opt4; ?>" height="400" width="400">
                     <?php
                 }else{
                     echo $opt4;
