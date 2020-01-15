@@ -2,6 +2,14 @@
 session_start();
 include "header.php";
 include "konekcija.php";
+if(!isset($_SESSION["username"]))
+{
+    ?>
+    <script type="text/javascript">
+        window.location="login.php";
+    </script>
+    <?php
+}
 ?>
 
 <div class="row" style="margin-top: 50px; padding:0px; margin-bottom: 50px;">         

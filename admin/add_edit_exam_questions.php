@@ -1,6 +1,15 @@
 <?php
-    include "header.php";
-    include "../konekcija.php";
+session_start();
+include "header.php";
+include "../konekcija.php";
+if(!isset($_SESSION["admin"]))
+{
+     ?>
+    <script type="text/javascript">
+        window.location="index.php";
+    </script>
+    <?php
+}
 ?>
         <div class="breadcrumbs">
             <div class="col-sm-12">

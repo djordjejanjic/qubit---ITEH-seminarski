@@ -11,7 +11,7 @@ if(!isset($_SESSION["username"]))
 ?>
 <?php
 include "konekcija.php";
-include "header_timer.php";
+include "header.php";
 ?>
 
 <div class="row" style="margin-top: 50px; padding:0px; margin-bottom: 50px;">       

@@ -1,22 +1,30 @@
 <?php
 session_start();
 include "header_timer.php";
+if(!isset($_SESSION["username"]))
+{
+    ?>
+    <script type="text/javascript">
+        window.location="login.php";
+    </script>
+    <?php
+}
 ?>
 
-<div class="row" style="margin-top: 50px; padding:0px; margin-bottom: 50px;">         
+<div class="row" style="margin-top: 0px; padding:0px; margin-bottom: 50px;">         
 <div class="col-lg-6 col-lg-push-3" style="min-height: 700px;">
     <!--editovanje-->
     <br>
     <div class="row">
 
         <br>
-        <div class="col-lg-2 col-lg-push-10">
+        <div class="" style="display:none;">
             <div id="current_que" style="float:left">0</div>
             <div style="float:left">/</div>
             <div id="total_que" style="float:left">0</div>
         </div>
 
-        <div class="row" style="margin-top:30px">
+        <div class="row" style="margin-top:0px">
             <div class="row">
                 <div class="col-lg-12 col-lg-push-0" style="min-height:250px; border:2px solid white; border-radius: 10px;" id="load_questions">
             </div>

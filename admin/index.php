@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "../konekcija.php";
 ?>
 
@@ -88,10 +89,10 @@
                 </script>
             <?php
         } else {
-            
+            $_SESSION["admin"] = $username;
             ?>
                 <script type="text/javascript">
-                    window.location="demo.php";
+                    window.location="exam_category.php";
                 </script>
             <?php
             

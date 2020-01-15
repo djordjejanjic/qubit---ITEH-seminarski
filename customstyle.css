@@ -88,7 +88,7 @@ thing > img{
     font-size:40px;
     font-family: 'Coda', cursive;
     padding-top: 32px;
-    padding-left: 10px;
+    padding-left: 13px;
 }
 
 #rezultati{
@@ -110,11 +110,49 @@ thing > img{
     height: 130px;
 }
 
+#custommenu{
+    background: linear-gradient(207deg, rgba(2,0,36,1) 0%, rgba(3,31,85,1) 82%, rgba(14,57,93,1) 100%)!important;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+    font-family: 'Coda', cursive;
+    font-size:20px;
+}
+.navbar-expand-lg .navbar-nav {
+    font-size:20px;
+    color:white;
+    font-family: 'VT323', monospace;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:white;
+}
+
+.nav-item{
+    padding-right: 20px;
+}
+.navbar-light .navbar-toggler-icon {
+    color: white;
+    background-image: url("https://www.abeautifulsite.net/uploads/2014/09/menu-icon.png?width=600&key=4bc015049071e7e16c61decfe5eca75cd081194e39a9e235b780ce644ef7e6ce");
+}
+
 @media only screen and (max-width: 1000px) {
     .col-lg-12{
         width: 80%!important;
         display: block!important;
         margin: auto!important;
 }
+.navbar-light .navbar-brand{
+    margin-left:90px;
+}
+
+.header-right-info ul.header-right-menu > li > a {
+    display:none!important;
+    }
   }
 

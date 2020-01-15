@@ -1,5 +1,14 @@
 <?php
+session_start();
 include "../konekcija.php";
+if(!isset($_SESSION["admin"]))
+{
+    ?>
+    <script type="text/javascript">
+        window.location="index.php";
+    </script>
+    <?php
+}
 
 $id=$_GET["id"];
 $id1=$_GET["id1"];
