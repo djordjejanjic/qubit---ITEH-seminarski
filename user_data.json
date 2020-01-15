@@ -1,0 +1,30 @@
+[
+    {
+        "firstname": "Djordje",
+        "lastname": "Janjic",
+        "username": "djolo",
+        "password": "djolo",
+        "email": "djordje.janjic@hotmail.com"
+    },
+    {
+        "firstname": "Andjela",
+        "lastname": "Colovic",
+        "username": "andja",
+        "password": "andja",
+        "email": "andjela1996colovic@yahoo.com"
+    },
+    {
+        "firstname": "Bojan",
+        "lastname": "Janjic",
+        "username": "boks",
+        "password": "boks",
+        "email": "znanjejemoc24@gmail.com"
+    },
+    {
+        "firstname": "Djordje",
+        "lastname": "Filipovic",
+        "username": "mister",
+        "password": "univeryum",
+        "email": "jthedjordje@yahoo.com"
+    }
+]
