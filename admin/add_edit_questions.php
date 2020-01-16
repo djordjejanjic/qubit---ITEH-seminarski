@@ -10,7 +10,6 @@ if(!isset($_SESSION["admin"]))
     </script>
     <?php
 }
-
     $id = $_GET["id"];
     $exam_category = '';
     $res = mysqli_query($link, "select * from exam_category where id=$id");
@@ -18,7 +17,7 @@ if(!isset($_SESSION["admin"]))
     {
     $exam_category = $row["category"];
     }
-?>
+    ?>
         <div class="breadcrumbs">
             <div class="col-sm-12">
                 <div class="page-header float-left">
@@ -44,8 +43,7 @@ if(!isset($_SESSION["admin"]))
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 2</label><input type="text" class="form-control" name="opt2" placeholder="Dodaj opciju 2"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 3</label><input type="text" class="form-control" name="opt3" placeholder="Dodaj opciju 3"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 4</label><input type="text" class="form-control" name="opt4" placeholder="Dodaj opciju 4"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="text" class="form-control" name="answer" placeholder="Dodaj odgovor"></div>
-                                
+                                <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="text" class="form-control" name="answer" placeholder="Dodaj odgovor"></div>           
                                 <div class="form-group">         
                                     <input type="submit" name="submit1" value="Dodaj pitanje" class="btn btn-success">                                  
                                 </div>                      
@@ -89,8 +87,7 @@ if(!isset($_SESSION["admin"]))
                                         <th>Izmeni</th>
                                         <th>Izbriši</th>
                                     </tr>
-                                
-                                
+                         
                                 <?php
                                     
                                     $res = mysqli_query($link, "SELECT * FROM questions where category = '$exam_category' ORDER BY question_no ASC");

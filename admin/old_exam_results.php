@@ -11,39 +11,32 @@ if(!isset($_SESSION["admin"]))
     <?php
 }
 ?>
-        <div class="breadcrumbs">
-            <div class="col-sm-4">
-                <div class="page-header float-left">
-                    <div class="page-title">
-                        <h1>Rezultati svih korisnika</h1>
-                    </div>
+    <div class="breadcrumbs">
+        <div class="col-sm-4">
+            <div class="page-header float-left">
+                <div class="page-title">
+                    <h1>Rezultati svih korisnika</h1>
                 </div>
             </div>
-            
-        </div>
-
+        </div>         
+    </div>
         <div class="content mt-3">
             <div class="animated fadeIn">
-
-
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card">
-                            
-                            <div class="card-body">
-                             
+                        <div class="card">    
+                            <div class="card-body">    
                             <h1 style="text-align: center; color:white; font-size:50px; margin-bottom:20px; font-family:'VT323', monospace;">Istorija rezultata</h1>
 
 <?php
 $res=mysqli_query($link, "SELECT * FROM exam_results ORDER BY id DESC");
 $count=mysqli_num_rows($res);
 
-
 if($count==0)
 {
     ?>
     <center>
-        <h1 style="font-size:50px; margin-top:30px; font-family:'VT323', monospace;">Nema rezultata, niste nijednom igrali!</h1>
+        <h1 style="font-size:50px; margin-top:30px; font-family:'VT323', monospace;">Nema rezultata, niko nije igrao!</h1>
     </center
     <?php
 }
@@ -71,16 +64,15 @@ else{
     echo "</table>";
 }
 ?>
-
-                            </div>
-                        </div> <!-- .card -->
-
                     </div>
-                    <!--/.col-->
-            
-                </div>
-            </div><!-- .animated -->
-        </div><!-- .content -->
+                    <form method="POST">
+                    <button type="submit" id="jsonrezultati" name="generisi">Generiši rezultate u JSON</button>
+                    </form>
+                </div> <!-- .card -->
+            </div>
+        </div>
+    </div><!-- .animated -->
+</div><!-- .content -->
 
 <?php
   include "footer.php";      

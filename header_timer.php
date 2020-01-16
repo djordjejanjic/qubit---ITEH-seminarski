@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,7 +14,6 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
     <div class="all-content-wrapper">
         <div class="header-advance-area">
@@ -49,18 +47,14 @@
                                     <div style="margin-right:30px;">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
-
-
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<img src="img/avatar-mini2.jpg" alt="" />
 															<span class="admin-name"><?php echo $_SESSION["username"]; ?></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-														</a>
+													</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                      
-                                                        <li><a href="logout.php"><span class="edu-icon edu-locked author-log-ic"></span>Izloguj se</a>
-                                                        </li>
+                                                        <li><a href="logout.php"><span class="edu-icon edu-locked author-log-ic"></span>Izloguj se</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -72,15 +66,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile Menu start -->
-
-            <!-- Mobile Menu end -->
-          
         </div>
         <script src="js/bootstrap.min.js"></script>
-            <!-- Mobile Menu start -->
-
-            <!-- Mobile Menu end -->
                                     <div class="timer">
                                         <ul class="">
                                             <li><div id="countdowntimer" style="display: block; color:white;"></div>
@@ -88,9 +75,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>           
-  
-        
+                            </div>
+                                        
 <script type="text/javascript">
     setInterval(function(){
         timer();

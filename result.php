@@ -7,7 +7,7 @@ include "header.php";
 ?>
 
 <div class="row" style="margin-top: 50px; padding:0px; margin-bottom: 50px;">         
-<div class="col-lg-6 col-lg-push-3" style="min-height: 700px;">
+<div class="col-lg-6 col-lg-push-3" id="procenatel" style="min-height: 700px;">
 
     <?php
         $correct=0;
@@ -42,14 +42,16 @@ include "header.php";
         $count=mysqli_num_rows($res);
         $wrong=$count-$correct;
         $percentage = ($correct/$count)*100;
-
+    
         echo "<br>"; echo "<br>";
         echo "<center class='centriraj'>";
         echo "Ukupan broj pitanja: ".$count;
         echo "<br>";
         echo "Broj tačnih odgovora: ".$correct;
         echo "<br>";
-        echo "Broj pogrešnih odgovora: ".$wrong; 
+        echo "Broj pogrešnih odgovora: ".$wrong;
+        echo "<br>";
+        echo "Procenat uspešnosti: ".round($percentage, 2)."%";
         echo "<br>";
         echo "<br>";
        
@@ -81,7 +83,6 @@ include "header.php";
 
     ?>
     
-
 </div>        
 </div>
 

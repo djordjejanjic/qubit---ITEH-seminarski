@@ -96,6 +96,15 @@ thing > img{
     font-size:20px;
     font-family:'Coda', cursive;
     border: 5px solid #2a3169!important;
+    width:95%;
+    margin:auto;
+    text-align:center;
+}
+
+#jsonrezultati{
+    display: block!important;
+    margin: auto!important;
+    margin-bottom: 20px!important;
 }
 
 .timer{

@@ -38,18 +38,14 @@ if(!isset($_SESSION["admin"]))
                         <h1>Izmeni pitanje</h1>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
-
         <div class="content mt-3">
             <div class="animated fadeIn">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card">
-                            
+                        <div class="card">  
                             <div class="card-body">
-                            
                             <form name="form1" action="" method="post" enctype="multipart/form-data">
                             <div class="col-lg-12">
                             <div class="card">
@@ -60,20 +56,17 @@ if(!isset($_SESSION["admin"]))
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 2</label><input type="text" class="form-control" name="opt2" value="<?php echo $opt2; ?>"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 3</label><input type="text" class="form-control" name="opt3" value="<?php echo $opt3; ?>"></div>
                                 <div class="form-group"><label for="company" class=" form-control-label">Opcija 4</label><input type="text" class="form-control" name="opt4" value="<?php echo $opt4; ?>"></div>
-                                <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="text" class="form-control" name="answer" value="<?php echo $answer; ?>"></div>
-                                
+                                <div class="form-group"><label for="company" class=" form-control-label">Tačan odgovor</label><input type="text" class="form-control" name="answer" value="<?php echo $answer; ?>"></div>                            
                                 <div class="form-group">         
-                                    <input type="submit" name="submit1" value="Izmeni pitanje" class="btn btn-success">                                  
+                                <input type="submit" name="submit1" value="Izmeni pitanje" class="btn btn-success">                                  
                                 </div>                      
                              </div>
                         </div>   
                         </form>
-                            </div>
+                        </div>
                         </div> <!-- .card -->
-
                     </div>
-                    <!--/.col-->
-            
+                     <!--/.col-->
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->

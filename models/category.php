@@ -9,7 +9,7 @@
     public $created_at;
 
     public function __construct($db) {
-      $this->conn = $db;
+    $this->conn = $db;
     }
 
 
@@ -19,9 +19,9 @@
         id,
         name,
         created_at
-      FROM
+        FROM
         ' . $this->table . '
-      ORDER BY
+        ORDER BY
         created_at DESC';
 
       $stmt = $this->conn->prepare($query);
@@ -37,10 +37,10 @@
     $query = 'SELECT
           id,
           name
-        FROM
+          FROM
           ' . $this->table . '
-      WHERE id = ?
-      LIMIT 0,1';
+          WHERE id = ?
+          LIMIT 0,1';
 
       $stmt = $this->conn->prepare($query);
 

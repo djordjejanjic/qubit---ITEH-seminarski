@@ -20,6 +20,7 @@ if(isset($_SESSION["answer"][$queno]))
 }
 
 $res=mysqli_query($link, "SELECT * FROM questions WHERE category='$_SESSION[exam_category]' && question_no=$_GET[questionno]");
+
 $count=mysqli_num_rows($res);
 
 if($count==0)

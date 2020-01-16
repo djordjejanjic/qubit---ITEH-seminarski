@@ -18,31 +18,24 @@ if(!isset($_SESSION["admin"]))
                         <h1>Izaberi oblast za upravljanje pitanjima</h1>
                     </div>
                 </div>
-            </div>
-            
+            </div>     
         </div>
-
         <div class="content mt-3">
             <div class="animated fadeIn">
-
-
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="card">
-                            
-                            <div class="card-body">
+                        <div class="card">    
+                           <div class="card-body">
                              <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Naziv oblasti</th>
                                             <th scope="col">Vreme trajanja</th>
-                                            <th scope="col">Izaberi</th>
-                                           
+                                            <th scope="col">Izaberi</th>    
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                            
+                                    <tbody>       
                                         <?php
                                         $brojac = 0;
                                         $res=mysqli_query($link, "select * from exam_category");

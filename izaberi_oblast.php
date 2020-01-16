@@ -9,16 +9,15 @@ if(!isset($_SESSION["username"]))
     <?php
 }
 ?>
+
 <?php
 include "konekcija.php";
 include "header.php";
 ?>
 
 <div class="row" style="margin-top: 50px; padding:0px; margin-bottom: 50px;">       
-    <div class="col-lg-6 col-lg-push-3" style="min-height: 700px;">
-       
+    <div class="col-lg-6 col-lg-push-3" style="min-height: 700px;"> 
        <h1 style="text-align:center; margin-bottom:30px; color:white; font-size: 80px; font-family: 'VT323', monospace;">Izaberi oblast</h1>
-       
        <?php
             $res=mysqli_query($link, "SELECT * FROM exam_category");
             while($row=mysqli_fetch_array($res))

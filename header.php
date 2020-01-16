@@ -15,6 +15,7 @@
     <link rel="icon" href="favicon.ico" type="image/ico">
 </head>
 <body>
+
     <div class="all-content-wrapper">
         <div class="header-advance-area">
             <div class="header-top-area">
@@ -70,4 +71,5 @@
                 </div>
             </div>      
         </div>
+    </script>
 <script src="js/bootstrap.min.js"></script>

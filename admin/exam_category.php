@@ -19,10 +19,8 @@ if(!isset($_SESSION["admin"]))
                         <h1>Upravljanje oblastima</h1>
                     </div>
                 </div>
-            </div>
-            
-        </div>
-
+            </div>    
+         </div>
         <div class="content mt-3">
             <div class="animated fadeIn">
                 <div class="row">
@@ -35,18 +33,13 @@ if(!isset($_SESSION["admin"]))
                             <div class="card-header"><strong>Dodaj novu oblast</strong></div>
                             <div class="card-body card-block">
                                 <div class="form-group"><label for="company" class=" form-control-label">Nova oblast</label><input type="text" class="form-control" name="examname" placeholder="Dodaj novu oblast"></div>
-                                    <div class="form-group"><label class=" form-control-label">Vreme nove oblasti</label><input type="text"  class="form-control" name="examtime" placeholder="Vreme u minutima"></div>
-                                
-                                <div class="form-group">
-                                    
-                                    <input type="submit" name="submit1" value="Dodaj oblast" class="btn btn-success">
-                                    
-                                </div>
-                                       
+                                    <div class="form-group"><label class=" form-control-label">Vreme nove oblasti</label><input type="text"  class="form-control" name="examtime" placeholder="Vreme u minutima"></div>   
+                                <div class="form-group">  
+                                    <input type="submit" name="submit1" value="Dodaj oblast" class="btn btn-success">   
+                                </div>        
                              </div>
                         </div>
-                    </div>
-                                
+                    </div>              
                     <div class="col-lg-6">
                         <div class="card">
                             <div class="card-header">

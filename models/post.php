@@ -72,7 +72,6 @@
         
         $stmt = $this->conn->prepare($query);
 
-        //obrisi podatke
         $this->title = htmlspecialchars(strip_tags($this->title));
         $this->body = htmlspecialchars(strip_tags($this->body));
         $this->author = htmlspecialchars(strip_tags($this->author));
@@ -133,7 +132,7 @@
         
         $this->id = htmlspecialchars(strip_tags($this->id));
         
-        //spoj
+        //spoji parametre
         $stmt->bindParam(':id', $this->id);
 
         if($stmt->execute()){

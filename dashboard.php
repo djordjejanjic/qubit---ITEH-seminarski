@@ -16,20 +16,17 @@ if(!isset($_SESSION["username"]))
     <!--editovanje-->
     <br>
     <div class="row">
-
         <br>
         <div class="" style="display:none;">
             <div id="current_que" style="float:left">0</div>
             <div style="float:left">/</div>
             <div id="total_que" style="float:left">0</div>
         </div>
-
         <div class="row" style="margin-top:0px">
             <div class="row">
                 <div class="col-lg-12 col-lg-push-0" style="min-height:250px; border:2px solid white; border-radius: 10px;" id="load_questions">
             </div>
         </div>
-
         <div class="row" style="margin-top:10px">
             <div class="col-lg-6 col-lg-push-3" style="min-height:50px">
                 <div class="col-lg-12 text-center">

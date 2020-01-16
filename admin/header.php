@@ -4,13 +4,7 @@ include "json-config-results.php";
 ?>
 
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-<!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,9 +19,9 @@ include "json-config-results.php";
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/customstyle.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
     <!-- Left Panel -->
     <aside id="left-panel" class="left-panel">
@@ -46,7 +40,6 @@ include "json-config-results.php";
                         <a href="add_edit_exam_questions.php"> <i class="menu-icon fa fa-dashboard"></i>Upravljaj pitanjima</a>
                         <a href="old_exam_results.php"> <i class="menu-icon fa fa-dashboard"></i>Pogledaj rezultate</a>
                         <a href="logout.php"> <i class="menu-icon fa fa-close"></i>Izloguj se</a>
-                        <form method="POST"><button type="submit" name="generisi">Generiši rezultate u JSON</button></form>
                     </li>  
                 </ul>    
             </div><!-- /.navbar-collapse -->

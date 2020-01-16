@@ -54,5 +54,21 @@
         "correct_answer": "1",
         "wrong_answer": "14",
         "exam_time": "2020-01-15"
+    },
+    {
+        "username": "djolo",
+        "exam_type": "Sun\u010dev sistem",
+        "total_question": "15",
+        "correct_answer": "10",
+        "wrong_answer": "5",
+        "exam_time": "2020-01-16"
+    },
+    {
+        "username": "djolo",
+        "exam_type": "Sun\u010dev sistem",
+        "total_question": "15",
+        "correct_answer": "0",
+        "wrong_answer": "15",
+        "exam_time": "2020-01-16"
     }
 ]
