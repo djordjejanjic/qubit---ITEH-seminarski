@@ -1,3 +1,8 @@
+<?php
+include "../konekcija.php";
+include "json-config-results.php";
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -39,8 +44,9 @@
                     <li>
                         <a href="exam_category.php"> <i class="menu-icon fa fa-dashboard"></i>Upravljaj oblastima</a>
                         <a href="add_edit_exam_questions.php"> <i class="menu-icon fa fa-dashboard"></i>Upravljaj pitanjima</a>
-                        <a href="old_exam_results.php"> <i class="menu-icon fa fa-dashboard"></i>Pogledaj rezultate korisnika</a>
+                        <a href="old_exam_results.php"> <i class="menu-icon fa fa-dashboard"></i>Pogledaj rezultate</a>
                         <a href="logout.php"> <i class="menu-icon fa fa-close"></i>Izloguj se</a>
+                        <form method="POST"><button type="submit" name="generisi">Generiši rezultate u JSON</button></form>
                     </li>  
                 </ul>    
             </div><!-- /.navbar-collapse -->

@@ -5,14 +5,12 @@ include "konekcija.php";
 
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Qubit | The Big Questions</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda|Squada+One|VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css1/bootstrap.min.css">
@@ -25,11 +23,11 @@ include "konekcija.php";
     <link rel="stylesheet" href="css1/main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css1/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/ico">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
-
 	<div class="error-pagewrap">
 		<div class="error-page-int">
 			<div class="text-center m-b-md custom-login">
@@ -47,7 +45,6 @@ include "konekcija.php";
                                 <label class="control-label" for="password" style="color:white!important; padding-left:160px!important; font-size:20px; font-family:'Coda', cursive;">Password</label>
                                 <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
                             </div>
-
                             <button type="submit" name="login" class="btn-primary-login"style="color: #fff; background-color: #252148!important; border-color: #19476f!important; font-size:25px; display:block; margin:auto; font-family: 'VT323', monospace;">Uloguj se</button>
                             <a class="btn-primary-login" href="registracija.php" style="margin-top:10px!important; font-family: 'VT323', monospace; font-size:20px">Registruj se</a>
                             <div class="alert alert-danger" id="failure" style="margin-top: 10px; display:none;">
@@ -58,7 +55,6 @@ include "konekcija.php";
                     </div>
                 </div>
 			</div>
-
 		</div>   
     </div>
     

@@ -26,7 +26,7 @@ if(!isset($_SESSION["username"]))
     {
         ?>
         <center>
-            <h1 style="font-size:50px; margin-top:30px; font-family:'VT323', monospace;">Nema rezultata, niste nijednom igrali!</h1>
+        <h1 style="font-size:50px; margin-top:30px; font-family:'VT323', monospace;">Nema rezultata, niste nijednom igrali!</h1>
         </center
         <?php
     }

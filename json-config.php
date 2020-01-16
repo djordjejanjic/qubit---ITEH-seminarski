@@ -33,7 +33,7 @@ if(isset($_POST["submit1"]))
                     'lastname' => $_POST['lastname'],
                     'username' => $_POST['username'],
                     'password' => $_POST['password'],
-                    'email' => $_POST['email']
+                    'email' => $_POST['email'] 
             );
             $array_data[] = $extra;
             $final_data = json_encode($array_data);

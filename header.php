@@ -12,13 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Coda|Squada+One|VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="customstyle.css">
-    
-<link rel="icon" href="favicon.ico" type="image/ico">
-
+    <link rel="icon" href="favicon.ico" type="image/ico">
 </head>
-
 <body>
-
     <div class="all-content-wrapper">
         <div class="header-advance-area">
             <div class="header-top-area">
@@ -30,8 +26,8 @@
                                     <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
                                         <div class="menu-switcher-pro">
                                             <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-													<i class="educate-icon educate-nav"></i>
-												</button>
+											<i class="educate-icon educate-nav"></i>
+											</button>
                                         </div>
                                     </div>
                                     <div class="">
@@ -51,16 +47,13 @@
                                     <div style="margin-right:30px;">
                                         <div class="header-right-info">
                                             <ul class="nav navbar-nav mai-top-nav header-right-menu">
-
-
-                                                <li class="nav-item">
+                                              <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="img/avatar-mini2.jpg" alt="" />
-															<span class="admin-name"><?php echo $_SESSION["username"]; ?></span>
-															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-														</a>
+														<img src="img/avatar-mini2.jpg" alt="" />
+														<span class="admin-name"><?php echo $_SESSION["username"]; ?></span>
+														<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+													</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                      
                                                         <li><a href="logout.php"><span class="edu-icon edu-locked author-log-ic"></span>Izloguj se</a>
                                                         </li>
                                                     </ul>
@@ -73,10 +66,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Mobile Menu start -->
-
-            <!-- Mobile Menu end -->
-          
+            </div>      
         </div>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
