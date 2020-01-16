@@ -33,13 +33,15 @@
                                     <div class="">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
+                                                <li class="nav-item"><a href="vesti.php" class="nav-link">Vesti</a>
+                                                </li>
                                                 <li class="nav-item"><a href="izaberi_oblast.php" class="nav-link">Izaberi oblast</a>
                                                 </li>
                                                 <li class="nav-item"><a href="univerzum.php" class="nav-link">Univerzum | Fotka dana</a>
                                                 </li>
                                                 <li class="nav-item"><a href="istorija_rezultata.php" class="nav-link">Istorija rezultata</a>
                                                 </li>
-                                                <li class="nav-item"><a href="logout.php" class="nav-link">Izloguj se</a>
+                                                 <li class="nav-item"><a href="logout.php" class="nav-link">Izloguj se</a>
                                                 </li>   
                                             </ul>
                                         </div>

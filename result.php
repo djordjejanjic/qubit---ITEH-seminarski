@@ -12,7 +12,6 @@ include "header.php";
     <?php
         $correct=0;
         $wrong=0;
-
         if(isset($_SESSION["answer"]))
         {
             for($i=1; $i<=sizeof($_SESSION["answer"]); $i++)

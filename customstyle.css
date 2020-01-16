@@ -133,12 +133,49 @@ thing > img{
     color:white;
 }
 
-.nav-item{
-    padding-right: 20px;
-}
 .navbar-light .navbar-toggler-icon {
     color: white;
     background-image: url("https://www.abeautifulsite.net/uploads/2014/09/menu-icon.png?width=600&key=4bc015049071e7e16c61decfe5eca75cd081194e39a9e235b780ce644ef7e6ce");
+}
+
+.titlepost{
+    color:white;
+    text-align:center;
+    margin-bottom:40px;
+    margin-top:20px;
+    font-family: 'Coda', cursive;
+}
+
+.bodypost{
+    color:white;
+    margin-bottom: 20px;
+    font-size:20px;
+    font-family: 'Coda', cursive;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.authorpost{
+    color:white;
+    font-family: 'VT323', monospace;
+    font-size:20px;
+    display:block;
+    margin:auto;
+}
+
+.postsform{
+    border:2px solid white;
+    border-radius:30px;
+    margin-bottom: 20px;
+    padding:30px 30px 30px 30px;
+}
+
+#novevestih{
+    color:white;
+    font-size:80px;
+    font-family:'VT323', monospace;
+    text-align:center;
+    margin-bottom:30px;
 }
 
 @media only screen and (max-width: 1000px) {
